@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('./google-sans-cufonfonts-webfont/ProductSans-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Product Sans Black Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Black Regular'), url('./google-sans-cufonfonts-webfont/ProductSans-Black.woff') format('woff');
+    }
+
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Product Sans Black Regular';
+}
+
+.schedule{
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.schedule
+.period-box{
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.schedule
+.period-box
+.time{
+    font-size: 35px;
+}
+
+.schedule
+.period-box
+.class-name{
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 25px;
+    background-color: white;
+    color: #FCA311;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 2px deepskyblue;
+}
+
+.schedule
+.period-box
+.link
+a.join-class-button{
+    text-align: center;
+    text-decoration: none;
+    background-color: deepskyblue;
+    color: white;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-transform: uppercase;
+    font-family: 'Product Sans Black Regular';
+    transition: ease-in 0.2s;
+
+}
+
+.schedule
+.period-box
+.link
+a.join-class-button:hover{
+    color: black;
+    background-color: white;
+    transition: ease-in 0.2s;
+}   
+
+.link{
+    padding-top: 50px;
+}
+
+@media screen and (max-width:1700px) {
+    .schedule{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .schedule
+    .period-box{
+        margin-top: 150px;
+    }
+
+
+}
